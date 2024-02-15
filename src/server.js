@@ -3,7 +3,7 @@ const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-  res.json({message: "penis"})
+  res.json({message: "hello word"})
 })
 
 app.get('/produto', (req, res) => {
