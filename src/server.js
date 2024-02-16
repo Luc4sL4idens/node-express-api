@@ -1,6 +1,7 @@
-const express = require('express')
+import express from 'express'
+import {PORT,HOST} from './config.js'
+
 const app = express()
-const port = 3000
 
 app.get('/', (req, res) => {
   res.json({message: "hello word"})
@@ -10,6 +11,6 @@ app.get('/produto', (req, res) => {
     res.json({message: "socorro"})
   })
 
-app.listen(port, () => {
-  console.log(`o servidor está rodando em ${port}`)
+app.listen(PORT, () => {
+  console.log(`o servidor está rodando em ${HOST}:${PORT}`)
 })
